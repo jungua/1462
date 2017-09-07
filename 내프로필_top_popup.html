@@ -268,14 +268,14 @@ background:linear-gradient(to bottom, #ffffff 0%, #ececec 100%);}
     
 /*-------------------------20170904 정우아-----------------------*/
 /*증명서등록 홍보레이어 추가*/
-.wedding_wrap .layer_cer{margin:0; padding:8px; display:inline-block; position:absolute; top:209px; right:26px; background-color:#fff; border:2px solid #868686; z-index:17; font-size:13px; font-weight:600; border-radius:16px; width:240px; box-sizing:border-box; box-shadow:1px 3px 3px #cecece;}
+.wedding_wrap .layer_cer{margin:0; padding:8px; display:inline-block; position:absolute; top:209px; right:26px; background-color:#fff; border:2px solid #777; z-index:17; font-size:13px; font-weight:600; border-radius:16px; width:240px; box-sizing:border-box; box-shadow:1px 3px 3px #cecece;}
 .layer_cer .cer_p, .layer_cer .cer_c{padding:0; margin:0; display:inline-block; font-size:13px;}
 .layer_cer .cer_p{color:#717379;}
 .layer_cer .cer_c{color:#bd7f8a;}
 .layer_cer .cer_issue{text-align:center;}
 .layer_cer .cer_issue .cer_a, .info_txt_list .c_btn a, .layer_txt .mc_03 a{font-size:14px; display:inline-block; text-align:center; padding:5px 12px; background-color:#bd7f8a; color:#fff; border-radius:5px; margin-top:8px; margin-bottom:3px;}
 .layer_cer .cer_issue .cer_a:active, .info_txt_list .c_btn a:active{background-color:#a9727c;}
-.wedding_wrap .angle3{width:0; height:0; border-left:8px solid transparent; border-right:8px solid transparent; border-top:14px solid #868686; z-index:18; position:absolute; top:114px; right:60px;}
+.wedding_wrap .angle3{width:0; height:0; border-left:8px solid transparent; border-right:8px solid transparent; border-top:14px solid #777; z-index:18; position:absolute; top:114px; right:60px;}
 .wedding_wrap .in_angle{width:0; height:0; border-left:6px solid transparent; border-right:6px solid transparent; border-top:10px solid #fff; position:absolute; top:-14px; right:-6px;}
 .wedding_wrap .cer_close{position:absolute; top:4px; right:4px; display:inline-block;}
 .wedding_wrap .cer_close a{display:block;}
@@ -308,7 +308,7 @@ background:linear-gradient(to bottom, #ffffff 0%, #ececec 100%);}
 .photo_cer_wrap .alarm_mg{margin:9px 10px;}
 .marry_cer{width:257px; height:100%; margin-bottom:10px; margin-left:10px;  border:1px solid #adadad; box-sizing:border-box; border-radius:3px;}
 .marry_cer .mr_paper{width:100%; height:272px; background:url(http://image.yeoboya.com/imgs/new_wedding/mobile/img2/marry_cer.png) no-repeat 0 0; background-size:257px 272px;}
-.marry_cer .mr_paper .paper_p{font-size:15px; font-weight:600; color:#cc2929; padding-top:4px;}
+.marry_cer .mr_paper .paper_p{font-size:21px; font-weight:600; color:#cc2929; padding-top:85px;}
 
 /* 증명서사진등록 팝업창 모달 */    
 .cer_modal{position:fixed; top:0; left:0; width:100%; z-index:20; background:rgba(0,0,0,0.7); height:100%;}
@@ -520,6 +520,44 @@ background:linear-gradient(to bottom, #ffffff 0%, #ececec 100%);}
 				</div>
 			</div>
 		</div>
+		<!--200170905 정우아 증명서 등록 추가-->
+		<div class="info_text mg_top" style="display:block">
+		  <!--증명서 등록 도움말 레이어-->
+			<div id="give-help_in-myprofile_2" class="alarm_layer" style="display:none; top:43px;">
+				<div class="layer_header font_b" style="height:58px; line-height:19px; margin-top:7px; padding-right:30px;">
+                    <img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img4/paper.png" width="25" height="25" style="position:absolute; top:4px; left:8px;">
+				    <div class="mc_d">
+				        <p class="mc_01">혼인관계/가족관계 증명서</p>
+				        <p class="mc_02">발급받은 증명서를 등록하세요.</p>
+				    </div>
+				</div>
+				<div class="btn_layer_clse" style="cursor:pointer"></div>
+				<div class="layer_txt">
+					<p>- 미혼증명용 혼인관계증명서(상세)</p>
+					<p>- 가족증명용 가족관계증명서(상세)</p>
+					<p class="mc_03"><a href="#">증명서 발급방법 보기</a></p>
+					<span style="display:inline-block; padding:8px 0 1px 0; color:#4f65c4;">※ 이성만 열람 가능합니다</span>
+					<span style="display:inline-block; color:#4f65c4;">※ 관계없는 사진은 삭제됩니다</span>
+				</div>
+			</div>
+			 <!--//증명서 등록 도움말 레이어-->
+			<p class="first_head font_b">
+				<img src="http://image.yeoboya.com/imgs/new_wedding/mobile/img/ico_cert.png" width="25" height="25" alt="정보" style="margin-left:3px;">혼인/가족관계증명서 사진
+				<span class="font_m" style="font-size:0.9em">(최대2장)</span>
+				<a href="javascript:void(0);" class="give-help_btn-in-myprofile" onclick="$.wealthHint('2');"></a>
+				<a href="javascript:void(0);" class="add_photo_btn" onclick="$.addPhoto('b');"><span class="add_btn" style="color:black">사진등록</span></a>
+			</p>
+			<div class="info_txt_list2" style="margin-top:10px;">
+				<div class="info_pr_photo_box font_m" id="photoDataList_b">
+					<div class="info_txt_list">
+                        <p class="intro_c">등록하신 증명서는 이성에게만 보이기 때문에<br>신뢰감을 줄 수 있어 관심도가 높아집니다.
+                        </p>
+                        <p class="c_btn"><a href="#">증명서 발급방법 보기</a></p>
+				    </div>
+			    </div>
+		    </div>
+        </div>
+        <!--200170905 정우아 증명서 등록 추가-->
 		<!--20170906 증명서사진등록 팝업모달 추가-->
         <div class="cer_modal">
         </div>
